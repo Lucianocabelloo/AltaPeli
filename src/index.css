@@ -1,0 +1,143 @@
+
+#root{
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  position: relative;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/621/859/641/peliculas-terror-wallpaper-preview.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  z-index: -1; 
+}
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+
+.formData{
+  display: flex;
+  flex-direction: column;
+}
+
+.name{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
+
+.textArea{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.containerForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 800px;
+  padding: 16px;
+}
+
+.formData{
+  border: 1px solid rgb(129, 124, 124);
+  border-radius: 16px;
+  padding: 32px 120px;
+  width: 100%;
+  gap: 8px;
+  background-color: aliceblue;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.containerMap{
+  margin: 16px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.card-img-top {
+  height: 400px;
+  object-fit: cover;
+}
+
+.card-body{
+  text-align: center;
+}
+
+.card-footer{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btnDelete{
+  background-color: red;
+  width: 100%;
+  color: white;
+  text-shadow: 2px 1px 2px black;
+
+  
+}
+
+.btnDelete:hover{
+  background-color: rgb(148, 8, 8) !important;
+}
+.btnEdit{
+  background-color: rgb(253, 236, 0);
+  text-shadow: 2px 1px 2px black;
+  width: 100%;
+  color: white;
+}
+
+.btnEdit:hover{
+  background-color: rgb(189, 156, 10) !important;
+  
+}
